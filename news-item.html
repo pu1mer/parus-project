@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/news-item.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Vite App</title>
+</head>
+<body>
+<header class="header container">
+    <a class="logo-text nav__link header__logo mobile__logo" href="index.html">
+        <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+        ПАРУСНИК
+    </a>
+    <nav class="nav">
+        <a class="nav__link nav__menu-wrapper" href="#">
+            <span class="nav__menu"></span>
+            <span class="nav__menu-text">
+              Меню
+            </span>
+        </a>
+        <a class="nav__link" href="restaurants.html">Рестораны</a>
+        <a class="nav__link" href="news.html">нОВОСТИ  </a>
+        <a class="nav__link" href="brands.html">бРЕНДЫ</a>
+        <a class="logo-text nav__link header__logo " href="index.html">
+            <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+            ПАРУСНИК
+        </a>
+        <a class="nav__link" href="park.html">ПАРКОВКА</a>
+        <a class="nav__link" href="index.html#contacts">кОНТАКТЫ</a>
+        <a class="nav__link" href="about.html">о НАС </a>
+        <a class="nav__link" href="register.html">
+            <img class="nav__user" src="./assets/images/user.svg" alt="Пользователь">
+        </a>
+
+    </nav>
+
+</header>
+<main class="main">
+    <section class="container news-item">
+        <h1 class="page-item__suptitle news-item__title">нОВОСТИ  </h1>
+        <div class="news-item__wrapper">
+            <div class="news-item__content">
+                <h2 class="page-item__title news-item__content-title">
+                    НОВАЯ КОЛЛЕКЦИЯ В BOOTWOOD
+                </h2>
+                <p class="news-item__content-date">06.06.2024 - 30.07.2024 г.</p>
+
+                <p class="news-item__content-desc">
+                    В новом сезоне концепция Bootwood предлагает свежую коллекцию сандалий от известных европейских производителей Timberland и Camper. Коллекция включает модели из натуральной кожи, обладающие уникальной легкостью благодаря технологии XL EXTRALIGHT и максимальным комфортом стопы благодаря анатомической стельке OrthoLite. Женская линия босоножек представлена в разнообразии цветов и стилей, включая модели на устойчивом каблуке и плоской подошве. Мужские сандалии идеально подходят для городских условий и длительных прогулок пешком.
+                </p>
+                <p class="news-item__content-wait">
+                    Ждем вас в нашем магазине BOOTWOOD!
+                </p>
+            </div>
+            <div class="news-item__images">
+                <img src="./assets/images/news-item-1.jpg" alt="НОВАЯ КОЛЛЕКЦИЯ В BOOTWOOD" class="news-item__image news-item__image--first">
+                <img src="./assets/images/news-item-2.jpg" alt="НОВАЯ КОЛЛЕКЦИЯ В BOOTWOOD" class="news-item__image news-item__image--second">
+            </div>
+
+        </div>
+    </section>
+    <section class="company">
+        <div class="company__lines"></div>
+        <div class="company__container">
+            <img src="./assets/images/company-1.png" alt="BOOTWOOD" class="company__logo">
+            <div class="company__wrapper">
+                <h2 class="company__title">BOOTWOOD</h2>
+                <div class="company__bottom">
+                    <div class="info company__info">
+                        <p class="info__floor company__floor">3 ЭТАЖ</p>
+                        <p class=" info__address company__address">Москва: Парусник</p>
+                    </div>
+                    <a href="#" target="_blank" class="company__link">Показать на <br> карте</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews swiper">
+        <h2 class="hidden">Отзывы</h2>
+        <ul class="list reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                    <div class="reviews__info">
+                        <img class="reviews__image" src="./assets/images/reviews-1.png" alt="Иван Иванов">
+                        <h3 class="reviews__name">Иван Иванов</h3>
+                    </div>
+                    <p class="reviews__desc">Отличный магазин с большим выбором одежды!</p>
+                </div>
+
+            </li>
+            <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                    <div class="reviews__info">
+                        <img class="reviews__image" src="./assets/images/reviews-2.png" alt="Илья">
+                        <h3 class="reviews__name">Илья</h3>
+                    </div>
+                    <p class="reviews__desc">Приятные скидки и акции, рекомендую!</p>
+                </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                    <div class="reviews__info">
+                        <img class="reviews__image" src="./assets/images/reviews-3.png" alt="Лариса">
+                        <h3 class="reviews__name">Лариса</h3>
+                    </div>
+                    <p class="reviews__desc">Очень понравилось обслуживание, обязательно вернусь снова</p>
+                </div>
+            </li>
+            <li class="reviews__item swiper-slide">
+                <div class="reviews__item-wrapper">
+                    <div class="reviews__info">
+                        <img class="reviews__image" src="./assets/images/reviews-2.png" alt="Иван">
+                        <h3 class="reviews__name">Иван</h3>
+                    </div>
+                    <p class="reviews__desc">Очень понравилось обслуживание, обязательно вернусь снова</p>
+                </div>
+            </li>
+
+
+        </ul>
+        <div class="reviews__buttons">
+            <button class="swiper-button-prev reviews__btn reviews__btn--left ">
+            </button>
+
+            <button class="swiper-button-next reviews__btn reviews__btn--right">
+
+            </button>
+        </div>
+
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <h2 class="logo-text footer__logo"><img class="logo" src="./assets/images/logo.svg" alt="Логотип">ПАРУСНИК</h2>
+            <p class="footer__desc">Обратная связь</p>
+            <a href="tel:89999999999" class="footer__phone">+8 (999) 999 - 99 - 99</a>
+        </div>
+        <div class="footer__bottom">
+            <h2 class="footer__title">Время работы</h2>
+            <div class="footer__lists">
+                <ul class="list footer__list">
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Пн</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Вт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Ср</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Чт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Пт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">23:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Сб</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">23:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Вс</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+
+                </ul>
+
+                <ul class="list footer__social">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/youtube.svg" alt="Ютуб" class="footer__social-image">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/telegramm.svg" alt="Телеграмм" class="footer__social-image">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/instagram.svg" alt="Инстаграмм" class="footer__social-image">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script type="module" src="./assets/js/global.js"></script>
+<script type="module" src="./assets/js/news-item.js"></script>
+</body>
+</html>

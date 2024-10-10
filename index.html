@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="header container">
+      <a class="logo-text nav__link header__logo mobile__logo" href="index.html">
+        <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+        ПАРУСНИК
+      </a>
+      <nav class="nav">
+          <a class="nav__link nav__menu-wrapper" href="#">
+            <span class="nav__menu"></span>
+            <span class="nav__menu-text">
+              Меню
+            </span>
+          </a>
+        <a class="nav__link" href="restaurants.html">Рестораны</a>
+        <a class="nav__link" href="news.html">нОВОСТИ  </a>
+        <a class="nav__link" href="brands.html">бРЕНДЫ</a>
+          <a class="logo-text nav__link header__logo " href="index.html">
+            <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+            ПАРУСНИК
+          </a>
+          <a class="nav__link" href="park.html">ПАРКОВКА</a>
+          <a class="nav__link" href="index.html#contacts">кОНТАКТЫ</a>
+          <a class="nav__link" href="about.html">о НАС </a>
+          <a class="nav__link" href="register.html">
+            <img class="nav__user" src="./assets/images/user.svg" alt="Пользователь">
+          </a>
+
+        </nav>
+
+    </header>
+    <main class="main">
+      <section class="intro">
+        <h1 class="hidden">Розыгрыши, акции, скидки</h1>
+        <div class="swiper intro__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide intro__slide">
+              <img class="intro__image" src="./assets/images/intro-bg.jpg" srcset="./assets/images/intro-1-small.jpg 564w, ./assets/images/intro-bg.jpg" alt="">
+            </div>
+            <div class="swiper-slide intro__slide">
+              <img class="intro__image" src="./assets/images/intro-2.jpg" srcset="./assets/images/intro-2-small.jpg 564w, ./assets/images/intro-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide intro__slide">
+              <img class="intro__image" src="./assets/images/intro-3.jpg" srcset="./assets/images/intro-3-small.jpg 564w, ./assets/images/intro-3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news container">
+        <h2 class="hidden">Наши новости и события</h2>
+        <ul class="list news__list">
+            <li class="news__item">
+              <h3 class="news__item-title">Новости</h3>
+              <a href="#" class="news__wrapper">
+                <p class="news__desc">Новый магазин lime</p>
+                <img src="./assets/images/news-1.jpg" alt="Новый магазин lime" class="news__image">
+              </a>
+            </li>
+            <li class="news__item">
+              <h3 class="news__item-title">СКИДКИ И АКЦИИ</h3>
+              <a href="#" class="news__wrapper">
+                <p class="news__desc">Летний Sale до -50% Caterina Leman</p>
+                <img src="./assets/images/news-2.jpg" alt="Новый магазин lime" class="news__image">
+              </a>
+            </li>
+            <li class="news__item">
+              <h3 class="news__item-title">СКИДКИ И АКЦИИ</h3>
+              <a href="#" class="news__wrapper">
+                <p class="news__desc">Сезонная распродажа в GNT! </p>
+                <img src="./assets/images/news-3.jpg" alt="Новый магазин lime" class="news__image">
+              </a>
+            </li>
+            <li class="news__item">
+              <h3 class="news__item-title">ОТКРЫТИЯ</h3>
+              <a href="#" class="news__wrapper">
+                <p class="news__desc">Открылся филиал PULKA в «парусник»!</p>
+                <img src="./assets/images/news-4.jpg" alt="Новый магазин lime" class="news__image">
+              </a>
+            </li>
+          </ul>
+      </section>
+      <section class="map container">
+          <h2 class="section-title map__title">карта парусника </h2>
+        <div class="map__items">
+          <div class="map__item">
+            <ul class="list map__list">
+              <li class="map__list-item">
+                <button class="map__list-btn">1 ЭТАЖ</button>
+              </li>
+              <li class="map__list-item">
+                <button class="map__list-btn">2 ЭТАЖ</button>
+              </li>
+              <li class="map__list-item">
+                <button class="map__list-btn map__list-btn--active">3 ЭТАЖ</button>
+              </li>
+              <li class="map__list-item">
+                <button class="map__list-btn">4 ЭТАЖ</button>
+              </li>
+            </ul>
+          </div>
+          <div class="map__content">
+            <img class="map__content-image" src="./assets/images/map-1.png" alt="Карта парусника - 3 этаж">
+          </div>
+
+        </div>
+      </section>
+      <section class="events container">
+        <h2 class="section-title events__title">МЕРОПРИЯТИЕ</h2>
+        <ul class="list events__list">
+          <li class="events__item">
+            <img src="./assets/images/events-1.jpg" alt="ВЫСТАВКА РОБОТОВ" class="events__image">
+              <h3 class="events__item-title">ВЫСТАВКА РОБОТОВ</h3>
+              <p class="events__date">30.09.2023</p>
+            <button class="events__item-btn">ЗАПИСАТЬСЯ</button>
+          </li>
+          <li class="events__item">
+            <img src="./assets/images/events-2.jpg" alt="ФОКУСНИКИ" class="events__image">
+              <h3 class="events__item-title">фокусники</h3>
+              <p class="events__date">30.09.2023</p>
+            <button class="events__item-btn">ЗАПИСАТЬСЯ</button>
+          </li>
+          <li class="events__item">
+            <img src="./assets/images/events-3.jpg" alt="GAME FEST" class="events__image">
+              <h3 class="events__item-title">Game fest</h3>
+              <p class="events__date">15.06.2024</p>
+            <button class="events__item-btn">ЗАПИСАТЬСЯ</button>
+          </li>
+          <li class="events__item">
+            <img src="./assets/images/events-4.jpg" alt="РОБОТО ТЕХНИКА" class="events__image">
+              <h3 class="events__item-title">рОБОТО ТЕХНИКА</h3>
+              <p class="events__date">30.06.2024</p>
+            <button class="events__item-btn">ЗАПИСАТЬСЯ</button>
+          </li>
+        </ul>
+      </section>
+      <section class="services container">
+        <h2 class="section-title services__title">нАШИ УСЛУГИ</h2>
+        <ul class="list services__list">
+          <li class="services__item">
+            <img src="./assets/images/services-1.png" alt="Банковская карточка" class="services__image">
+            <h3 class="services__item-title">БАНКОМАТЫ</h3>
+          </li>
+          <li class="services__item">
+            <img src="./assets/images/services-2.png" alt="Машина" class="services__image">
+            <h3 class="services__item-title">АВТОМОЙКА</h3>
+          </li>
+          <li class="services__item">
+            <img src="./assets/images/services-3.png" alt="WI-FI" class="services__image">
+            <h3 class="services__item-title">WI-FI</h3>
+          </li>
+          <li class="services__item">
+            <img src="./assets/images/services-4.png" alt="АПТЕКА" class="services__image">
+            <h3 class="services__item-title">АПТЕКА</h3>
+          </li>
+          <li class="services__item">
+            <img src="./assets/images/services-5.png" alt="i" class="services__image">
+            <h3 class="services__item-title">стойка информации</h3>
+          </li>
+          <li class="services__item">
+            <img src="./assets/images/services-6.png" alt="WC" class="services__image">
+            <h3 class="services__item-title">WC</h3>
+          </li>
+
+        </ul>
+      </section>
+      <section id="contacts" class="contacts">
+        <h2 class="section-title contacts__title">кАК ДОБРАТЬСЯ?</h2>
+        <address class="contacts__address">ул. 70 лет Октября, 19, Омск </address>
+        <img src="./assets/images/contacts-1.jpg" alt="Карта" class="contacts__map">
+      </section>
+    </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top">
+        <h2 class="logo-text footer__logo"><img class="logo" src="./assets/images/logo.svg" alt="Логотип">ПАРУСНИК</h2>
+        <p class="footer__desc">Обратная связь</p>
+        <a href="tel:89999999999" class="footer__phone">+8 (999) 999 - 99 - 99</a>
+      </div>
+      <div class="footer__bottom">
+        <h2 class="footer__title">Время работы</h2>
+        <div class="footer__lists">
+          <ul class="list footer__list">
+            <li class="footer__item">
+              <p class="footer__item-desc">Пн</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">22:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__item-desc">Вт</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">22:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__item-desc">Ср</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">22:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__item-desc">Чт</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">22:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__item-desc">Пт</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">23:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__item-desc">Сб</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">23:00</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__item-desc">Вс</p>
+              <p class="footer__item-date">10:00</p>
+              <p class="footer__item-date">22:00</p>
+            </li>
+
+          </ul>
+
+          <ul class="list footer__social">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./assets/images/youtube.svg" alt="Ютуб" class="footer__social-image">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./assets/images/telegramm.svg" alt="Телеграмм" class="footer__social-image">
+              </a>
+            </li>
+
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <img src="./assets/images/instagram.svg" alt="Инстаграмм" class="footer__social-image">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </footer>
+    <script type="module" src="./assets/js/global.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
+@import "fonts";
+@import "global";
+
+.about {
+  margin-top: 50px;
+  &__title {
+    margin-bottom: 60px;
+    @media (max-width: 564px) {
+      margin-bottom: 30px;
+    }
+
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: space-between;
+    row-gap: 80px;
+    column-gap: 15px;
+    @media (max-width: 1500px) {
+      row-gap: 70px;
+    }
+    @media (max-width: 1024px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+  }
+  &__item {
+    grid-column: 6 span;
+    grid-row: 6 span;
+    max-width: 678px;
+    @media (max-width: 1400px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &:not(:first-child) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-left: auto;
+      @media (max-width: 1024px) {
+        margin-left: 0;
+      }
+
+    }
+    &:first-child {
+      grid-column: 6 span;
+      grid-row: 12 span;
+      @media (max-width: 1400px) {
+        grid-column: 6 span;
+        grid-row: 6 span;
+
+      }
+
+    }
+    &-image {
+      @media (max-width: 1400px) {
+        margin-top: auto;
+      }
+
+    }
+    &-suptitle {
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 18px;
+      color: $dark-color;
+      opacity: 0.75;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &-title {
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 30px;
+      color: $dark-color;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      position: relative;
+      text-align: center;
+      max-width:  max-content;
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width: 1300px) {
+        font-size: 24px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 20px;
+      }
+      @media (max-width: 564px) {
+        font-size: 18px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $red-color;
+      }
+    }
+    &-desc {
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #000;
+      max-width: 633px;
+      margin-bottom: 50px;
+      @media (max-width: 564px) {
+        margin-bottom: 25px;
+      }
+
+    }
+  }
+
+}
+
+.subscribe {
+  margin-top: 120px;
+  padding: 70px 0 100px 0;
+  background-color: $pink-color;
+  @media (max-width: 564px) {
+    margin-top: 60px;
+    padding: 35px 0 50px 0;
+  }
+
+  &__title {
+    font-family: "Libre Caslon Text", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    max-width: 1100px;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    @media (max-width: 1024px) {
+      font-size: 24px;
+    }
+    @media (max-width: 564px) {
+      font-size: 18px;
+    }
+
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+  }
+  &__inputs {
+    display: flex;
+    align-items: center;
+    @media (max-width: 1024px) {
+      margin-bottom: 25px;
+    }
+    @media (max-width: 564px) {
+      flex-direction: column;
+    }
+
+  }
+  &__label {
+    &:not(:last-child) {
+      margin-right: 120px;
+      @media (max-width: 1024px) {
+        margin-right: 60px;
+      }
+      @media (max-width: 564px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+  &__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid $red-color;
+    max-width: max-content;
+    text-transform: uppercase;
+    color: $dark-color;
+    font-family: "Libre Caslon Text", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 6px;
+    &:first-child {
+      width: 130px;
+    }
+    &::placeholder {
+      text-transform: uppercase;
+      color: $dark-color;
+      opacity: 0.75;
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+
+    }
+  }
+  &__btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Libre Caslon Text", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 18px 56px;
+    background-color: $white-color;
+    color: $dark-color;
+    border-radius: 15px;
+    @media (max-width: 1024px) {
+      font-size: 24px;
+      padding: 9px 28px;
+    }
+
+  }
+  &__agree {
+    margin-top: 20px;
+    font-family: "Libre Caslon Text", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #656565;
+    text-transform: uppercase;
+    opacity: 0.75;
+    max-width: 1200px;
+  }
+}

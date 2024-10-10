@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/register.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Vite App</title>
+</head>
+<body>
+<header class="header container">
+    <a class="logo-text nav__link header__logo mobile__logo" href="index.html">
+        <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+        ПАРУСНИК
+    </a>
+    <nav class="nav">
+        <a class="nav__link nav__menu-wrapper" href="#">
+            <span class="nav__menu"></span>
+            <span class="nav__menu-text">
+              Меню
+            </span>
+        </a>
+        <a class="nav__link" href="restaurants.html">Рестораны</a>
+        <a class="nav__link" href="news.html">нОВОСТИ  </a>
+        <a class="nav__link" href="brands.html">бРЕНДЫ</a>
+        <a class="logo-text nav__link header__logo " href="index.html">
+            <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+            ПАРУСНИК
+        </a>
+        <a class="nav__link" href="park.html">ПАРКОВКА</a>
+        <a class="nav__link" href="index.html#contacts">кОНТАКТЫ</a>
+        <a class="nav__link" href="about.html">о НАС </a>
+        <a class="nav__link" href="register.html">
+            <img class="nav__user" src="./assets/images/user.svg" alt="Пользователь">
+        </a>
+
+    </nav>
+
+</header>
+<main class="main">
+    <section class="register">
+        <div class="register__links">
+            <a href="login.html" class="register__link">ВХОД</a>
+            <a href="register.html" class="register__link register__link--active">РЕГИСТРАЦИЯ</a>
+        </div>
+        <h1 class="register__title">РЕГИСТРАЦИЯ</h1>
+        <form class="register__form" >
+            <div class="register__group">
+                <label class="register__label">
+                    <p class="register__info">ИМЯ</p>
+                    <input name="name" type="text" class="register__input">
+                </label>
+                <label class="register__label">
+                    <p class="register__info">ФАМИЛИЯ</p>
+                    <input name="surname" type="text" class="register__input">
+                </label>
+            </div>
+            <label class="register__label">
+                <p class="register__info">почта</p>
+                <input name="email" type="email" class="register__input">
+            </label>
+            <label class="register__label">
+                <p class="register__info">номер телефона</p>
+                <input name="phone" type="tel" class="register__input">
+            </label>
+            <label class="register__label">
+                <p class="register__info">пароль</p>
+                <input name="password" type="password" class="register__input">
+            </label>
+            <label class="register__label">
+                <p class="register__info">повторите пароль</p>
+                <input name="second_password" type="password" class="register__input">
+            </label>
+            <label class="register__label">
+                <div class="g-recaptcha" data-sitekey="6LcmMgIqAAAAABeOaI609FxTe4SSoRZ2O1yp_ZFj"></div>
+                <input value="ЗАРЕГИСТРИРОВАТЬСЯ" type="submit" class="register__btn">
+            </label>
+
+        </form>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <h2 class="logo-text footer__logo"><img class="logo" src="./assets/images/logo.svg" alt="Логотип">ПАРУСНИК</h2>
+            <p class="footer__desc">Обратная связь</p>
+            <a href="tel:89999999999" class="footer__phone">+8 (999) 999 - 99 - 99</a>
+        </div>
+        <div class="footer__bottom">
+            <h2 class="footer__title">Время работы</h2>
+            <div class="footer__lists">
+                <ul class="list footer__list">
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Пн</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Вт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Ср</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Чт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Пт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">23:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Сб</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">23:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Вс</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+
+                </ul>
+
+                <ul class="list footer__social">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/youtube.svg" alt="Ютуб" class="footer__social-image">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/telegramm.svg" alt="Телеграмм" class="footer__social-image">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/instagram.svg" alt="Инстаграмм" class="footer__social-image">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script type="module" src="./assets/js/global.js"></script>
+<script type="module" src="./assets/js/auth.js"></script>
+</body>
+</html>

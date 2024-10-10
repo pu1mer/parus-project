@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
+@import "fonts";
+@import "global";
+
+.restaurants {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  @media (max-width: 1024px) {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    @media (max-width: 1024px) {
+      margin-bottom: 50px;
+
+    }
+
+    @media (max-width: 564px) {
+      margin-bottom: 35px;
+    }
+
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 90px;
+    @media (max-width: 1500px) {
+      gap: 20px;
+    }
+
+  }
+  &__item {
+    grid-column: 3 span;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: $light-gray;
+    padding: 7px 4px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1024px) {
+      grid-column: 4 span;
+    }
+    @media (max-width: 896px) {
+      grid-column: 6 span;
+    }
+    @media (max-width: 564px) {
+      grid-column: 12 span;
+    }
+
+    &-image {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 18px;
+    }
+    &-title {
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $dark-color;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      @media (max-width: 1500px) {
+        font-size: 18px;
+        line-height: 18px;
+
+      }
+
+    }
+    &-desc {
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $dark-gray;
+      margin-bottom: 25px;
+      margin-left: 15px;
+
+      @media (max-width: 1500px) {
+        font-size: 16px;
+        line-height: 16px;
+
+      }
+
+    }
+    &-floor {
+      margin-top: auto;
+      font-family: "Libre Caslon Text", sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $dark-color;
+      margin-bottom: 20px;
+      margin-left: 15px;
+      @media (max-width: 1500px) {
+        font-size: 18px;
+        line-height: 18px;
+
+      }
+
+    }
+  }
+  &__link {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;  }
+
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/restaurant.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+</head>
+<body>
+<header class="header container">
+    <a class="logo-text nav__link header__logo mobile__logo" href="index.html">
+        <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+        ПАРУСНИК
+    </a>
+    <nav class="nav">
+        <a class="nav__link nav__menu-wrapper" href="#">
+            <span class="nav__menu"></span>
+            <span class="nav__menu-text">
+              Меню
+            </span>
+        </a>
+        <a class="nav__link" href="restaurants.html">Рестораны</a>
+        <a class="nav__link" href="news.html">нОВОСТИ  </a>
+        <a class="nav__link" href="brands.html">бРЕНДЫ</a>
+        <a class="logo-text nav__link header__logo " href="index.html">
+            <img class="logo" src="./assets/images/logo.svg" alt="Логотип">
+            ПАРУСНИК
+        </a>
+        <a class="nav__link" href="park.html">ПАРКОВКА</a>
+        <a class="nav__link" href="index.html#contacts">кОНТАКТЫ</a>
+        <a class="nav__link" href="about.html">о НАС </a>
+        <a class="nav__link" href="register.html">
+            <img class="nav__user" src="./assets/images/user.svg" alt="Пользователь">
+        </a>
+
+    </nav>
+
+</header>
+<main class="main">
+    <section class="container restaurant">
+        <h1 class="page-item__suptitle page-item__suptitle--small restaurant__title">рестораны/#farш  </h1>
+        <div class="restaurant__wrapper">
+            <div class="restaurant__content">
+                <h2 class="page-item__title restaurant__content-title">
+                    #FARШ
+                </h2>
+                <p class="restaurant__content-type">Кафе и рестораны, Ресторанный дворик</p>
+
+                <div class="info restaurant__info">
+                    <p class="info__floor restaurant__floor">4 ЭТАЖ</p>
+                    <p class=" info__address restaurant__address">Москва: Парусник</p>
+                </div>
+             <div class="restaurant__content-text">
+                <p class="restaurant__content-desc">
+                    Все ингредиенты для бургеров готовят на кухне #FARША. Прямые поставки мяса от «Мираторга».
+                </p>
+                <p class="restaurant__content-desc">
+                    Булки выпекаются по золотому стандарту – 13 сантиметров. Все свежее, вкусное, натуральное.
+                </p>
+                <p class="restaurant__content-desc">
+                    Агропромышленный холдинг «Мираторг» знает толк в мясе. Для #FARША они запустили специальную линию обработки — такого фарша не будет ни у кого!
+                </p>
+                <p class="restaurant__content-desc">
+                    Делается он из мраморной говядины Black Angus из Брянской области.
+                </p>
+                <p class="restaurant__content-desc">
+                    Сами булки готовят по секретному рецепту бренд-шефа и партнера проекта Камеля Бенмамара.
+                </p>
+
+            </div>
+            </div>
+            <div class="restaurant__images">
+                <img src="./assets/images/restaurant-1.jpg" alt="#FARШ" class="restaurant__image restaurant__image--first">
+                <img src="./assets/images/restaurant-2.jpg" alt="#FARШ" class="restaurant__image restaurant__image--second">
+            </div>
+
+        </div>
+    </section>
+    <section class="company company--left restaurant__company">
+        <div class="company__lines"></div>
+        <div class="container company__container company__container--left">
+            <div class="company__left">
+                <img src="./assets/images/restaurant-company-1.png" alt="#FARШ" class="company__logo">
+                <div class="company__wrapper">
+                    <ul class="list company__list">
+                        <li class="company__item">
+                             <p class="company__item-desc">ТЕЛЕФОН: </p>
+                        </li>
+                        <li class="company__item">
+                            <a href="tel:74994604021" class="company__item-about">+7(499)460-40-21</a>
+                        </li>
+                        <li class="company__item">
+                            <p class="company__item-desc">Часы: </p>
+                        </li>
+                        <li class="company__item">
+                            <p class="company__item-about">Пн-Чт, Вс 10:00-22:00, Пт-Сб 10:00-23:00 </p>
+                        </li>
+                        <li class="company__item">
+                            <p class="company__item-desc">Сайт: </p>
+                        </li>
+                        <li class="company__item">
+                            <a href="Farshburger.ru" target="_blank" class="company__item-about">Farshburger.ru</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__top">
+            <h2 class="logo-text footer__logo"><img class="logo" src="./assets/images/logo.svg" alt="Логотип">ПАРУСНИК</h2>
+            <p class="footer__desc">Обратная связь</p>
+            <a href="tel:89999999999" class="footer__phone">+8 (999) 999 - 99 - 99</a>
+        </div>
+        <div class="footer__bottom">
+            <h2 class="footer__title">Время работы</h2>
+            <div class="footer__lists">
+                <ul class="list footer__list">
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Пн</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Вт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Ср</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Чт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Пт</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">23:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Сб</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">23:00</p>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__item-desc">Вс</p>
+                        <p class="footer__item-date">10:00</p>
+                        <p class="footer__item-date">22:00</p>
+                    </li>
+
+                </ul>
+
+                <ul class="list footer__social">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/youtube.svg" alt="Ютуб" class="footer__social-image">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/telegramm.svg" alt="Телеграмм" class="footer__social-image">
+                        </a>
+                    </li>
+
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link">
+                            <img src="./assets/images/instagram.svg" alt="Инстаграмм" class="footer__social-image">
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script type="module" src="./assets/js/global.js"></script>
+</body>
+</html>
